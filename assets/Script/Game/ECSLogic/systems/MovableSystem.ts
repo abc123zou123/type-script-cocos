@@ -68,6 +68,7 @@ export class MovableSystem extends ECSSystem {
             } else if (movable.position.y < this.rect.yMin) {
                 movable.position.y = this.rect.yMax;
             }
+            
 
             // 如果该组件所属的实体拥有 RenderNodeComponent 组件
             // 则同步更新 Node 的位置
